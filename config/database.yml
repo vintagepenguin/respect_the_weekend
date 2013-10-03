@@ -23,4 +23,4 @@ production:
   password:
 
 cucumber:
-  <<: *TEST
+    <<: *TEST
