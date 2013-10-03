@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby "1.9.3"
+
 gem 'rails', '4.0.0.rc1'
 
 # Bundle edge Rails instead:
@@ -24,6 +26,8 @@ gem 'jquery-rails'
 gem "omniauth"
 gem 'omniauth-facebook'
 gem 'protected_attributes'
+
+gem 'rails_12factor', group: :production
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
