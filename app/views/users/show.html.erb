@@ -1,0 +1,9 @@
+<h1><%= current_user.name %></h1>
+<h2>Your Events</h2>
+<% current_user.events.each do |event| %>
+
+  <a href="/events/<%= event.id %>"><%= event.name %></a>
+  <a href="/events/<%= event.id %>/edit">Edit Event</a>
+     <% @event = event  %>
+  <p><%= link_to 'Remove Event', @event , :confirm => 'Are you sure you want to remove this comment? This cannot be undone.', :method => :delete %></p>
+<% end  %>

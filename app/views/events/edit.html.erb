@@ -1,0 +1,10 @@
+<h2>the new and improved edit page. </h2>
+<%= form_for @event do |f| %>
+  <%= f.text_field :name, :placeholder => "#{@event.name}"  %> <br>
+  <%= f.text_area  :description, :placeholder => "#{@event.description}"%> <br>
+  <%= f.text_field :url, :placeholder => "#{@event.url}" %> <br>
+  <%= f.text_field :address, :placeholder => "#{@event.address}" %> <br>
+  <%= f.datetime_local_field :date  %> <br>
+  <%= f.submit %> <br>
+<% end  %>
+
