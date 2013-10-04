@@ -1,27 +1,27 @@
 <div class="top-div">
   <div class="main-title">
-      <h1>Respect The Weekend</h1>
+      <h1>respect <span>the</span> weekend.</h1>
+      <h4>ONLY UNIQUE EVENTS. ONLY WEEKEND EVENTS.</h4>
   </div>
 
-  <div class="create">
-    <p><%= link_to "Create An Event", new_event_path  %></p>
-  </div>
+    <div class="top-links">
+      <div class="create">
+        <p><%= link_to "Create An Event", new_event_path  %></p>
+      </div>
 
-  <div id="user_nav">
-      <% if current_user %>
-     <p>Signed In as <strong> <%= current_user.name  %> </strong>
-        <%= link_to "Sign Out", signout_path, id: "sign_out" %>
-      </p>   
-        <% else %>
-      <p>
-        <%= link_to "Sign In With Facebook", "/auth/facebook", id: "sign_in" %>
-      </p>
-      <% end  %>
-  </div>
-  <div class="tag-line">
-    <h3>because the weekend comes but once a week.</h3>
-    <h4>ONLY UNIQUE EVENTS. ONLY WEEKEND EVENTS.</h4>
-    <h5>Rules: Each voter gets 10 votes a week.</h5>
-    <h5>Spend them wisely.</h5>
-  </div>
+      <div id="user_nav">
+          <% if current_user %>
+         <p><span>Oh hey</span><strong> <%= current_user.name  %> </strong>
+            <%= link_to "Sign Out", signout_path, id: "sign_out" %>
+          </p>   
+            <% else %>
+          <p>
+            <%= link_to "Sign In With Facebook", "/auth/facebook", id: "sign_in" %>
+          </p>
+          <% end  %>
+      </div>
+<!--   <div class="tag-line">
+    <h3>the weekend comes but once a week.</h3>
+  </div> -->
+  </div>  
 </div>

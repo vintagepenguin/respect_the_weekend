@@ -14,12 +14,33 @@
 .container {
   width: 65%;
   margin: auto;
-  background-color: #9bcaeb;
   min-height: 700px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 .top-div{
   width: 100%;
+}
+
+.top-div h1{
+  font-size: 5em;
+  font-weight: 100;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+a{
+  color: #ff895c; 
+}
+
+
+.top-div h4{
+  color: #ff895c;
+  font-size: 1.5em;
+  margin: 0;
 }
 
 .main-title{
@@ -76,4 +97,72 @@
   padding: 0;
   margin-top: 2%;
   margin-bottom: 2%;
+}
+
+#user_nav pspan {
+ color: #ff895c;
+}
+
+.create_event{
+  width: 75%;
+  margin: auto;
+  margin-top: 35px;
+}
+.create_event input{
+  width: 80%;
+  margin: auto;
+  height: 10px;
+}
+
+.form{
+  margin: auto; 
+  width: 70%;
+}
+
+input {
+  padding: 15px;
+  width: 400px;
+  border: 1px solid #9bcaeb;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+
+}
+
+input::-webkit-input-placeholder {
+ color: #ff895c;
+  text-transform: uppercase;
+}
+
+input::-moz-placeholder {
+ color: #ff895c;
+  text-transform: uppercase;
+}
+
+input:-moz-placeholder {   /* Older versions of Firefox */
+ color: #ff895c;
+  text-transform: uppercase;
+}
+
+input:-ms-input-placeholder { 
+ color: #ff895c;
+  text-transform: uppercase;
+}
+
+.btn input {
+  height: 50px; 
+  font-size: 1em;
+  width: 50%;
+  background-color: #9bcaeb; 
+  color: white;
+  margin-left: 90px;
+}
+
+#new-event{
+  margin-top: 40px;
+}
+
+.top-links{
+  margin-bottom: 100px;
 }
