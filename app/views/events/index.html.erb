@@ -1,26 +1,29 @@
-<% @events.each do |event| %>
-  <div class="row">
-    <!-- VOTES -->
-    <div class="votes">
-      <% if event.users.count > 0 %>
-      <h2><%= event.users.count %></h2>
-      <% else %>
-      <h2> 0 </h2>
-      <% end  %>
-      <hr>
-      
-      <%= form_for event, url: add_vote_path(event) do |f| %>
-        <h3><%= f.submit "upvote" %></h3>  
-      <% end %>
-    </div> 
-    <!-- EVENTS -->
-    <div class="event">
-      <h5>WHAT: <a href="/events/<%= event.id %>"><%= event.name %></a></h5>    
-      <h5>WHERE: <%= event.address %>
-      <h5>WHY: <%= event.description %></h5>
-      <h5>TIME: <%= event.start_time %></h5>
-      <h5>DATE: <%= event.date %></h5>
+<div class="box">
+  <% @events.each do |event| %>
+    <div class="row">
+      <!-- VOTES -->
 
+      <div class="votes">
+        <% if event.users.count > 0 %>
+        <h2><%= event.users.count %></h2>
+        <% else %>
+        <h2> 0 </h2>
+        <% end  %>
+        <!-- <hr> -->
+        
+        <%= form_for event, url: add_vote_path(event) do |f| %>
+          <h3><%= f.submit "upvote" %></h3>  
+        <% end %>
+      </div> 
+      <!-- EVENTS -->
+      <div class="event">
+        <h5>WHAT: <a href="/events/<%= event.id %>"><%= event.name %></a></h5>    
+        <h5>WHERE: <%= event.address %>
+        <!-- <h5>WHY: <%= event.description %></h5> -->
+        <h5>TIME: <%= event.start_time %></h5>
+        <h5>DATE: <%= event.date %></h5>
+
+      </div>
     </div>
-  </div>
-<% end  %>
+  <% end  %>
+</div>
