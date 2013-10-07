@@ -20,8 +20,8 @@
         <h5>WHAT: <a href="/events/<%= event.id %>"><%= event.name %></a></h5>    
         <h5>WHERE: <%= event.address %>
         <!-- <h5>WHY: <%= event.description %></h5> -->
-        <h5>TIME: <%= event.start_time %></h5>
-        <h5>DATE: <%= event.date %></h5>
+        <h5>TIME: <%= event.start_time ? event.start_time.strftime("%I:%M %p") : nil %></h5>
+        <h5>DATE: <%= event.date ? event.date.strftime('%A %B %d') : nil %></h5>
 
       </div>
     </div>

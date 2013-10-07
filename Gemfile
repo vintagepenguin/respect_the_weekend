@@ -27,6 +27,9 @@ gem "omniauth"
 gem 'omniauth-facebook'
 gem 'protected_attributes'
 
+gem "activesupport", "~> 4.0.0.rc1"
+gem "strftime", "~> 1.0.0"
+
 gem 'rails_12factor', group: :production
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -31,7 +31,7 @@ class EventsController < ApplicationController
                                 description: params[:event][:description],
                                 address: params[:event][:address],
                                 url: params[:event][:url] )
-      flash[:notice] = "Successful you sexy beast!!"
+      flash[:notice] = "Successful!!"
       redirect_to event_url(@event)
     else 
       flash[:notice] = 'Editing Event Was Unsuccessful'
